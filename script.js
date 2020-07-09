@@ -4,7 +4,7 @@ let gameScore = 0;
 
 let boxes = document.querySelectorAll('.box');
 boxes.forEach((box) => {
-	box.addEventListener('click', gamePlay);
+	box.addEventListener('click', turnSequence);
 });
 function switchPlayers() {
 	if (currentPlayer === 'X') {
@@ -17,19 +17,19 @@ function switchPlayers() {
 */
 }
 
-function checkWinCondition() {
-	// checks for win conditions
-}
-function checkTieCondition() {
-	// check if there is a tie
-}
-function checkBoxNotOccupied(event) {
-	if ((event.target.innerText = null)) {
-		turnSequence();
-	}
+// function checkWinCondition() {
+// 	// checks for win conditions
+// }
+// function checkTieCondition() {
+// 	// check if there is a tie
+// }
+// function checkBoxNotOccupied(event) {
+// 	if ((event.target.innerText = null)) {
+// 		turnSequence();
+// 	} else 
 
-	// determine if the game box that is clicked is empty!
-}
+// 	// determine if the game box that is clicked is empty!
+// }
 
 // function startGame() {
 // 	gameScore = 0;
